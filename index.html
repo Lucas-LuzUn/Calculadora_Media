@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <title>Calculadora de Media</title>
+</head>
+<body>
+    
+    <div class="container_principal">
+        <h1>
+            Calculadora de Media Final
+        </h1>
+
+        <div class="container_secundario">
+            <input type="number" name="NP1" id="np1" placeholder="Digite a nota da NP1:">
+            <input type="number" name="NP2" id="np2" placeholder="Digite a nota da NP2:">
+            <input type="number" name="PIM" id="pim" placeholder="Digite a nota dp PIM:">
+
+            <button type="button" onclick="calcular()">Calcular</button>
+            <button type="button" onclick="limpar()">Limpar</button>
+        </div>
+
+        <h3>Sua média final é de: <span id="media"></span></h3>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

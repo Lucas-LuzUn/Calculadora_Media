@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: smaller;
+    color: #373A40;
+    background-color: #f2f2f2cd;
+}
+
+.container_principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #eeee;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+.container_secundario {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+
+input {
+    width: 300px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 8px;
+    border: 1px solid #686D76;
+}
+
+button {
+    width: 300px;
+    height: 25px;
+    margin: 5px;
+    background-color: #DC5F00;
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+    font-size: larger;
+    color: #373A40;
+    transition: all 0.5ms;
+}
+
+button:hover {
+    transition: 0.5ms;
+    background-color: #af4c00;
+}
+
+button:active 
+{
+    transform: scale(0.98); /* Efeito de "pressionar" */
+    background-color: #8c3b00; /* Cor mais escura ao clicar */
+}
+
+/* Media Queries para telas menores */
+@media (max-width: 600px) {
+    input, button {
+        width: 100%; /* Faz o input e o botão ocuparem 100% da largura do container */
+    }
+
+    .container_principal {
+        width: 90%; /* Ajusta a largura do container principal */
+    }
+}
